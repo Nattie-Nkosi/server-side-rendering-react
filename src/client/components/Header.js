@@ -10,7 +10,7 @@ const Header = ({ auth }) => {
   );
 
   return (
-    <nav>
+    <nav style={{ backgroundColor: '#6c5ce7' }}>
       <div className='nav-wrapper'>
         <Link to='/' style={{ marginLeft: '20px' }} className='brand'>
           Server Side Rendering
