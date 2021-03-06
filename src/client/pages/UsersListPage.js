@@ -28,7 +28,7 @@ function mapStateToProps(state) {
 }
 
 function loadData(store) {
-  store.dispatch(fetchUsers());
+  return store.dispatch(fetchUsers());
 }
 
 export default {

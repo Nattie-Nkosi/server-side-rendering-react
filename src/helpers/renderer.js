@@ -18,7 +18,8 @@ export default (req, store) => {
   return `
     <html>
       <head>
-        <title></title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <title>React Server Side Rendering</title>
       </head>
       <body>
         <div id="root">${content}</div>
