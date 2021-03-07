@@ -12,9 +12,9 @@
     "dev:server": "nodemon --watch build --exec node build/bundle.js",
     "dev:build-server": "webpack --config webpack.server.js --watch",
     "dev:build-client": "webpack --config webpack.client.js --watch",
-    "postinstall": "webpack -p"
+    "postinstall": "webpack -p --config ./webpack.server.js --config ./webpack.client.js"
   },
-  "author": "",
+  "author": "Nutty Nkosi",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
