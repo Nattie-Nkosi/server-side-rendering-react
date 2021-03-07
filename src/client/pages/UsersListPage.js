@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchUsers } from '../actions';
+import { Helmet } from 'react-helmet';
 
 class UsersList extends Component {
   componentDidMount() {
@@ -9,13 +10,23 @@ class UsersList extends Component {
 
   renderUsers() {
     return this.props.users.map((user) => {
-      return <li id={user.id}>{user.name}</li>;
+      return <li key={user.id}>{user.name}</li>;
     });
+  }
+
+  head() {
+    return (
+      <Helmet>
+        <title>Users | Server Side Rendering</title>
+        <meta property='og:title' content='Users | Server Side Rendering' />
+      </Helmet>
+    );
   }
 
   render() {
     return (
       <div>
+        {this.head()}
         Here's a big list of users:
         <ul>{this.renderUsers()}</ul>
       </div>

@@ -1,9 +1,11 @@
 import React from 'react';
 
-const NotFoundPage = () => {
+const NotFoundPage = ({ staticContext = {} }) => {
+  staticContext.notFound = true;
   return (
     <div className='center-align' style={{ marginTop: '200px' }}>
-      <h1>Ooops, route not found</h1>
+      <h1>PAGE NOT FOUND</h1>
+      <p>Opps! This page doesn't exist</p>
     </div>
   );
 };
