@@ -7,6 +7,7 @@ HTML file which makes a follow up request and fetches javascript file then rende
 to make content visible to the user's screen.
 
 ## App overview of Authentication System using Google OAuth
+ - ![image](https://user-images.githubusercontent.com/36708180/120073471-b50ca980-c098-11eb-97e7-1325218ae95e.png)
  
+## Google OAuth to login a user
  
-
